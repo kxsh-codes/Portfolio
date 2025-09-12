@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Page-specific adjustments */
+
+    /* Shrink hero height for contact page */
+    .hero.contact-hero {
+      height: auto;        /* auto height instead of fixed 400px */
+      padding: 40px 20px;  /* top/bottom spacing */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Contact form section */
+    .contact-form-section {
+      max-width: 600px;
+      margin: 20px auto; 
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px; 
+    }
+
+    .contact-form-section form input,
+    .contact-form-section form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #fff; /* original border color */
+      background: #1a1a1a;
+      color: #fff;
+    }
+
+    .contact-form-section form button {
+      background: #23e212;
+      color: #000;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: 1px solid #fff; /* keep original border */
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero contact-hero">
+    <h2>Contact Me</h2>
+    <p>Interested in working together? Reach out to me through the form below.</p>
+  </section>
+
+  <section class="projects contact-form-section">
+    <div class="project-card">
+      <div class="card-content">
+        <form action="#" method="post">
+          <label for="name" style="color:#fff;">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email" style="color:#fff;">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message" style="color:#fff;">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Kxsh Portfolio. All rights reserved.
+  </footer>
+</body>
+</html>
